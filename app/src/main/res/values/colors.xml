@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red">#FF3030</color>
+    <color name="green">#090</color>
+    <color name="blue">#009</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="griditems_bg">#ffe8ecef</color>
+    <color name="commo_text_color">#ff333333</color>
+    <color name="line">#ffd3dde6</color>
+    <color name="photo">#63B8FF</color>
+    <color name="file">#5bace1</color>
+    <color name="sms">#A2CD5A</color>
+    <color name="txt">#7dbb3c</color>
+    <color name="contacts">#EEB422</color>
+    <color name="call">#FFA500</color>
+    <color name="callb">#CD8500</color>
+    <color name="sms_press">#6E8B3D</color>
+    <color name="photo_press">#6CA6CD</color>
+    <color name="menu">#2B2B2B</color>
+    <color name="photo_text">#969696</color>
+    <color name="login">#FF1493</color>
+    <color name="login_press">#F08080</color>
+</resources>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_weight="1"
+    android:layout_height="100dp"
+    android:background="@drawable/border">
+
+   <RelativeLayout
+       android:id="@+id/optionRelativeLayout"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <ImageView
+           android:id="@+id/img"
+           android:layout_width="30dp"
+           android:layout_height="30dp"
+           android:layout_margin="15dp"
+           android:layout_centerVertical="true"
+           android:background="@drawable/pay"/>
+
+       <TableLayout
+           android:id="@+id/option"
+           android:layout_width="wrap_content"
+           android:layout_toRightOf="@id/img"
+           android:layout_marginLeft="10dp"
+           android:layout_centerVertical="true"
+           android:layout_height="wrap_content">
+
+           <TextView
+               android:id="@+id/optionprice"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="20dp"
+               android:textColor="#000"
+               android:text="￥99.00"/>
+
+           <TextView
+               android:id="@+id/optionname"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="12dp"
+               android:text="Renee 数据恢复 Win版1年期"/>
+       </TableLayout>
+
+       <CheckBox
+           android:id="@+id/chooseTobuy"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerVertical="true"
+           android:layout_marginRight="30dp"
+           android:scaleX="0.7"
+           android:scaleY="0.7"
+           style="@style/PayCheckTheme"
+           android:layout_alignParentRight="true"/>
+
+   </RelativeLayout>
+
+
+</LinearLayout>

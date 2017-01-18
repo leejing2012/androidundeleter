@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp">
+
+    <ImageView
+        android:id="@+id/photo_window"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/recover_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:visibility="invisible"
+        android:text="已恢复"/>
+
+    <CheckBox
+        android:id="@+id/pcheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        style="@style/PhotoCheckTheme"
+        android:visibility="invisible"
+        />
+
+</RelativeLayout>

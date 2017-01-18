@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="8">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="10"
+            android:orientation="vertical"
+            android:id="@+id/backarea"
+            android:background="@drawable/photolayout_selecter"
+            android:clickable="true"
+            >
+            <RelativeLayout
+                android:id="@+id/backUp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/pback"
+                    android:layout_width="30dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:clickable="false"
+                    android:background="@drawable/nav_btn_back"/>
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/pback"
+                    android:textSize="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical|left"
+                    android:textColor="#fff"
+                    android:text="设置"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/topright"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="10"
+            android:layout_gravity="right|center_vertical"
+            android:background="@color/photo">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:layout_weight="1">
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:text="@string/save_choose"
+            android:background="@drawable/border"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/border">
+
+            <CheckBox
+                android:id="@+id/externalStorge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                style="@style/SettingCheckTheme"
+                android:layout_alignParentLeft="true"/>
+
+            <TableLayout
+                android:id="@+id/option_outer"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/externalStorge"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:text="@string/save_external"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:text="/storage/emulated/legacy"/>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/extra_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:textSize="15dp"
+                android:text="55.74GB"/>
+
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@drawable/border">
+
+            <CheckBox
+                android:id="@+id/innerStorge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                style="@style/SettingCheckTheme"
+                android:layout_alignParentLeft="true"/>
+
+            <TableLayout
+                android:id="@+id/option_inter"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/innerStorge"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:text="@string/save_inner"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:text="/data"/>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/inter_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:textSize="15dp"
+                android:text="55.74GB"/>
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/top"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="10">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="10"
+                android:orientation="vertical"
+                android:id="@+id/backarea"
+                android:background="@drawable/filelayout_selecter"
+                >
+                <RelativeLayout
+                    android:id="@+id/ptback"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/pback"
+                        android:layout_width="30dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:clickable="false"
+                        android:background="@drawable/nav_btn_back"/>
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/pback"
+                        android:textSize="16dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical|left"
+                        android:textColor="#fff"
+                        android:text="恢复文件"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="6"
+                android:layout_gravity="right|center_vertical"
+                android:background="@color/file">
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="#fff"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2.5"
+                    android:orientation="vertical"
+                    android:background="@color/file">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/front"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#fff"
+                            android:layout_centerVertical="true"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="扫描到"/>
+
+                        <TextView
+                            android:id="@+id/t_middle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="40dp"
+                            android:textStyle="bold"
+                            android:layout_toRightOf  ="@id/front"
+                            android:layout_marginLeft="10dp"
+                            android:layout_centerVertical="true"
+                            android:text="0"/>
+
+                        <TextView
+                            android:id="@+id/t_behind"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/t_middle"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="20dp"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/white"
+                            android:text="文件"/>
+
+
+                     <ImageView
+                         android:id="@+id/undelete_pause"
+                         android:layout_width="60dp"
+                         android:layout_height="60dp"
+                         android:src="@drawable/recover_file_button"
+                         android:layout_alignParentRight="true"
+                         android:clickable="true"
+                         android:layout_centerVertical="true"
+                         android:layout_marginRight="20dp" />
+
+
+
+                    </RelativeLayout>
+                    <com.reneelab.DataModel.BarProgross
+                        android:id="@+id/pb_progressbarf"
+                        style="@style/StyleProgressBarMini"
+                        android:layout_weight="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/t_down"
+                        android:layout_marginTop="10dp"
+                        android:progressDrawable="@drawable/file_recover_bar"
+                        android:max="100"
+                        android:progress="0" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tabIndicatorColor="@color/file"
+                        app:tabSelectedTextColor="@color/file"
+                        app:tabTextColor="@color/black"
+                       />
+
+                    <!--可滑动的布局内容-->
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/vp_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+                <include layout="@layout/file_recover_btm" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

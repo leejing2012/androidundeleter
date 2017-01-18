@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/wholebackground"
+        android:background="@drawable/background">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="10"
+            >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="10"
+                android:orientation="vertical"
+                android:id="@+id/backarea"
+                android:clickable="true"
+                >
+                <RelativeLayout
+                    android:id="@+id/backUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/pback"
+                        android:layout_width="30dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:clickable="false"
+                        android:background="@drawable/nav_btn_back"/>
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/pback"
+                        android:textSize="17dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical|left"
+                        android:textColor="#fff"
+                        android:text=""/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/topright"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="10"
+                android:layout_gravity="right|center_vertical"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+                <ImageView
+                    android:id="@+id/pic"
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    />
+
+               <TextView
+                   android:id="@+id/recordNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                   android:layout_marginTop="20dp"
+                    android:textSize="20dp"
+                    android:layout_below="@id/pic"
+                    android:gravity="center"
+                    android:text="未保存扫描结果"/>
+
+            <Button
+                android:id="@+id/startRecord"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/startrecover_record"
+                android:textColor="#000"
+                android:textSize="12dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="120dp"
+                android:visibility="gone"
+                android:text="点击查看"/>
+
+
+            <Button
+                android:id="@+id/startTocontact"
+                android:layout_width="match_parent"
+                android:layout_height="50dip"
+                android:background="@drawable/startrecover_button_shape"
+                android:textColor="#fff"
+                android:textSize="18dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="80dp"
+                android:text="开始扫描"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

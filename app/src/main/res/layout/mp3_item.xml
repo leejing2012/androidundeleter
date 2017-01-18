@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/outpatient_check_hospital"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5.0dip"
+        android:layout_marginLeft="12.599976dip"
+        android:layout_marginRight="12.599976dip"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center_vertical"
+        android:background="#fff">
+
+        <LinearLayout
+            android:id="@+id/box"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_margin="10.0dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="45dip"
+                android:layout_height="45dip"
+                android:adjustViewBounds="false"
+                android:src="@drawable/filetype_icon_music"/>
+
+            <LinearLayout
+                android:id="@+id/part2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/mp3_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.0"
+                        android:text=""
+                        android:textColor="#ff323232"
+                        android:textSize="13.0sp"
+                        android:typeface="monospace" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:id="@+id/mp3_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2.0"
+                        android:text="大小：7.03KB"
+                        android:textColor="#ff323232"
+                        android:textSize="15.0sp"
+                        android:typeface="monospace" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/part3"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <CheckBox
+                android:id="@+id/checkBoxMp3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:scaleX="0.7"
+                android:scaleY="0.7"
+                style="@style/PayCheckTheme"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/avi_recover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textSize="25dp"
+                android:visibility="gone"
+                android:text="已恢复"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

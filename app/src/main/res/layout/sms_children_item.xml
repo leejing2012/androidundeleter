@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:background="@drawable/border"
+    android:paddingTop="5dp" >
+
+    <LinearLayout
+        android:id="@+id/zxjc_upload_cb_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|right"
+        android:orientation="horizontal"
+        android:layout_alignParentRight="true">
+        <CheckBox
+            android:id="@+id/children_cb"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            style="@style/CustomCheckboxTheme"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+
+        android:layout_marginLeft="20dp"
+        android:layout_toLeftOf="@id/zxjc_upload_cb_layout">
+
+        <TextView
+            android:id="@+id/sms_content_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/sms_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text=""/>
+    </LinearLayout>
+</RelativeLayout>

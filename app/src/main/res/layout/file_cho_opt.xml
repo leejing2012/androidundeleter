@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+   <!-- <LinearLayout
+        android:id="@+id/img_option"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:background="@drawable/file_choose_selecter">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/filetype_icon_images"/>
+
+            <TableLayout
+                android:id="@+id/option"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/img"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:text="图片"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12dp"
+                    android:text="jpg,png,gif"/>
+            </TableLayout>
+
+            <CheckBox
+                android:id="@+id/c_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                android:textSize="0dp"
+                android:text="img"
+                style="@style/PayCheckTheme"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/video_option"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:background="@drawable/file_choose_selecter">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/video_text"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/filetype_icon_video"/>
+
+            <TableLayout
+                android:id="@+id/v_option"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/video_text"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:text="视频"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12dp"
+                    android:text="mp4,avi,mov,wmv,3gp"/>
+            </TableLayout>
+
+            <CheckBox
+                android:id="@+id/c_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                android:textSize="0dp"
+                android:text="video"
+                style="@style/PayCheckTheme"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mp3_option"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:background="@drawable/file_choose_selecter">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/mp3_text"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/filetype_icon_music"/>
+
+            <TableLayout
+                android:id="@+id/m_option"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/mp3_text"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:text="音频"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12dp"
+                    android:text="mp3,wav,wma,amr,m4a"/>
+            </TableLayout>
+
+            <CheckBox
+                android:id="@+id/c_mp3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                android:textSize="0dp"
+                android:text="mp3"
+                style="@style/PayCheckTheme"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/word_option"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:background="@drawable/file_choose_selecter">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/word_text"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/filetype_icon_word"/>
+
+            <TableLayout
+                android:id="@+id/w_option"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/word_text"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:text="文档"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12dp"
+                    android:text="pdf,doc(x),ppt(x),xls(x),snb"/>
+            </TableLayout>
+
+            <CheckBox
+                android:id="@+id/c_word"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                android:textSize="0dp"
+                android:text="word"
+                style="@style/PayCheckTheme"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:id="@+id/zip_option"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:background="@drawable/file_choose_selecter">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/zip_text"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/filetype_icon_zip_rar"/>
+
+            <TableLayout
+                android:id="@+id/z_option"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/zip_text"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:text="压缩包"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12dp"
+                    android:text="zip,rar,gzip"/>
+            </TableLayout>
+
+            <CheckBox
+                android:id="@+id/c_zip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                style="@style/PayCheckTheme"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/apk_option"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:clickable="true"
+        android:background="@drawable/file_choose_selecter">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/exe_text"
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/filetype_icon_apk"/>
+
+            <TableLayout
+                android:id="@+id/e_option"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/exe_text"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:textColor="#000"
+                    android:text="安装文件"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12dp"
+                    android:text="apk,exe"/>
+            </TableLayout>
+
+            <CheckBox
+                android:id="@+id/c_apk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                style="@style/PayCheckTheme"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+    </LinearLayout>-->
+
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 首页gridview -->
+    <string-array name="home_grid_texts">
+        <item>恢复照片</item>
+        <item>恢复短信</item>
+        <item>恢复联系人</item>
+        <item>恢复TXT</item>
+        <item>恢复WIFI</item>
+        <item>恢复微信</item>
+        <item>恢复通信录</item>
+        <item>恢复Messenger</item>
+        <item>回收站</item>
+
+    </string-array>
+    <array name="home_grid_imgs">
+        <item>@drawable/undelete_icon_photo</item>
+        <item>@drawable/undelete_icon_sms</item>
+        <item>@drawable/undelete_icon_contact</item>
+        <item>@drawable/undelete_icon_txt</item>
+        <item>@drawable/undelete_icon_wifi</item>
+        <item>@drawable/undelete_icon_whatsapp</item>
+        <item>@drawable/undelete_icon_calls</item>
+
+    </array>
+</resources>

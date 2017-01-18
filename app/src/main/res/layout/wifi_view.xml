@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/filetype_icon_wifi"/>
+
+    <TextView
+        android:id="@+id/wifi_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/icon"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="lee"/>
+
+   <!-- <TextView
+        android:id="@+id/wifi_line"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/icon"
+        android:layout_height="10dp"
+        android:textSize="0dp"/>-->
+    <ImageView
+        android:id="@+id/lock"
+        android:layout_width="13dip"
+        android:layout_height="13dip"
+        android:src="@drawable/lock"
+        android:layout_below="@+id/wifi_name"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/icon"/>
+
+    <TextView
+        android:id="@+id/wifi_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/lock"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="7dp"
+        android:textSize="15dp"
+        android:text="pass"/>
+
+    <Button
+        android:id="@+id/copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_copy"
+        android:textSize="15dp"
+        android:text="复制密码"
+        />
+
+
+
+
+</RelativeLayout>

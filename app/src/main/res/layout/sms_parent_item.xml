@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="60dp"
+    android:background="#FFF" >
+
+    <LinearLayout
+        android:id="@+id/sms_checkbox_space"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:background="#fff"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/sms_title_checkbox"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/checkbox_normal" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_toLeftOf="@id/sms_checkbox_space"
+        >
+
+       <ImageView
+           android:id="@+id/expand_icon"
+           android:layout_width="20dp"
+           android:layout_height="20dp"
+           android:layout_marginRight="10dp"
+           android:background="@drawable/file_indicator_collapse"/>
+
+        <TextView
+            android:id="@+id/sms_title_content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:textColor="#BEBEBE"/>
+    </LinearLayout>
+</RelativeLayout>

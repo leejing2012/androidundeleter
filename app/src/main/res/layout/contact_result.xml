@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#008bef">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="10"
+            android:orientation="horizontal"
+            >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="10"
+                android:orientation="vertical"
+                android:id="@+id/backarea"
+                >
+                <RelativeLayout
+                    android:id="@+id/ptback"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#008bef">
+
+                    <ImageButton
+                        android:clickable="false"
+                        android:id="@+id/pback"
+                        android:layout_width="30dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/nav_btn_back"/>
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/pback"
+                        android:textSize="19dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical|left"
+                        android:textColor="#fff"
+                        android:text="NULL"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="10"
+                android:layout_gravity="right|center_vertical"
+                >
+                <TextView
+                    android:id="@+id/stopScan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/pback"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical|right"
+                    android:layout_marginRight="5dp"
+                    android:textColor="#fff"
+                    android:text="暂停扫描"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="#fff"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:id="@+id/contacterhead"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/contact_boder"
+                    android:orientation="vertical"
+
+                    android:layout_weight="3">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/t_front"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:layout_above="@+id/pb_progressbarf"
+                            android:layout_toLeftOf="@+id/contacter_num"
+                            android:textSize="20dp"
+                            android:layout_marginRight="10dp"
+                            android:text="扫描到"/>
+
+                        <TextView
+                            android:id="@+id/contacter_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_above="@+id/pb_progressbarf"
+                            android:textColor="@color/contacts"
+                            android:textSize="40dp"
+                            android:textStyle="bold"
+                            android:text="0"/>
+
+                        <TextView
+                            android:id="@+id/t_behind"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/pb_progressbarf"
+                            android:layout_toRightOf="@id/contacter_num"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="10dp"
+                            android:textSize="20dp"
+                            android:text="联系人"/>
+
+                        <ProgressBar
+                            android:id="@+id/pb_progressbarf"
+                            style="@style/StyleProgressBarMini"
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"
+                            android:layout_above="@+id/t_down"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:progressDrawable="@drawable/file_recover_bar"
+                            android:max="100"
+                            android:progress="0" />
+
+                        <TextView
+                            android:id="@+id/t_down"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_alignParentBottom="true"
+                            android:textSize="10dp"
+                            android:text="深层扫描...."/>
+
+                        <TextView
+                            android:id="@+id/scan_pro_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_alignParentBottom="true"
+                            android:textSize="10dp"
+                            android:text="0.00%"/>
+
+
+
+                    </RelativeLayout>
+
+                   <!--<TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textSize="15dp"
+                        android:text="扫描到0联系人"/>
+
+                    -->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ListView
+                        android:id="@+id/listView1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <include layout="@layout/bottom_layout" />
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

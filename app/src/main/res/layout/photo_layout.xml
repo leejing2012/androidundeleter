@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/top"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="10">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                android:id="@+id/backarea"
+                >
+                <RelativeLayout
+                    android:id="@+id/ptback"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/photolayout_selecter">
+
+                    <ImageButton
+                        android:id="@+id/pback"
+                        android:layout_width="30dp"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_centerVertical="true"
+                        android:clickable="false"
+                        android:background="@drawable/nav_btn_back"/>
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/pback"
+                        android:textSize="19dp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical|left"
+                        android:textColor="#fff"
+                        android:text="NULL"/>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/stopScan"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="6"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/photolayout_selecter"
+                >
+                <TextView
+                    android:id="@+id/stop_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/pback"
+                    android:textSize="16dp"
+                    android:gravity="center_vertical|right"
+                    android:layout_marginRight="5dp"
+                    android:textColor="#fff"
+                    android:text="暂停扫描"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="#fff"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:id="@+id/photoHead"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="@color/photo">
+
+                    <FrameLayout
+                        android:layout_width="120dp"
+                        android:layout_height="110dp">
+
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="110dp"
+                            android:scaleX="0.8"
+                            android:scaleY="0.8"
+                            android:src="@drawable/undelete_photo_in"/>
+
+                        <ImageView
+                            android:id="@+id/photo_anim"
+                            android:layout_width="120dp"
+                            android:layout_height="110dp"
+                            android:scaleX="0.8"
+                            android:scaleY="0.8"
+                            android:src="@drawable/undelete_photo_out"/>
+                        
+                        <TextView
+                            android:id="@+id/Spercent"
+                            android:layout_width="120dp"
+                            android:layout_height="110dp"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:textColor="@color/white"
+                            android:text="0%"/>
+
+                    </FrameLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        >
+                        <TextView
+                            android:id="@+id/front"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#CAE1FF"
+                            android:layout_above="@+id/middleline"
+                            android:textSize="18dp"
+                            android:text="扫描到"/>
+
+                         <TextView
+                             android:id="@+id/t_middle"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_toRightOf="@id/front"
+                             android:layout_marginLeft="8dp"
+                             android:layout_marginRight="8dp"
+                             android:layout_above="@+id/middleline"
+                             android:textColor="@color/white"
+                             android:textSize="27dp"
+                             android:text="0"/>
+
+                         <TextView
+                             android:id="@+id/behind"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_toRightOf="@id/t_middle"
+
+                             android:textColor="#CAE1FF"
+                             android:layout_above="@+id/middleline"
+                             android:textSize="18dp"
+                             android:text="照片"/>
+
+                        <TextView
+                            android:id="@+id/middleline"
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:layout_centerVertical="true"/>
+
+                        <TextView
+                            android:id="@+id/down_font"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/middleline"
+                            android:textColor="#CAE1FF"
+                            android:textSize="12dp"
+                            android:text="正在进行扫描....."/>
+
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.8">
+
+                    <!--<include layout="@layout/photo_viewpager" />-->
+                    <GridView
+                        android:id="@+id/photo_wall"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:columnWidth="@dimen/image_thumbnail_size"
+                        android:gravity="center"
+                        android:horizontalSpacing="@dimen/image_thumbnail_spacing"
+                        android:numColumns="auto_fit"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="@dimen/image_thumbnail_spacing" >
+                    </GridView>
+
+
+
+                </LinearLayout>
+                <include layout="@layout/photo_bottom_layout"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
